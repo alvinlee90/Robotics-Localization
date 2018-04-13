@@ -1,0 +1,53 @@
+# PF parameters
+# angle values are multiplicative constants of pi
+localisation:
+  num_particles: 750
+  
+  num_measurements: 17
+  max_measurements: 30
+  
+  update_rate: 1
+
+  outlier:
+    outlier_threshold: 0.000025
+    max_outlier: 15
+
+  robot:
+    base: 0.205
+    radius: 0.036
+
+  initial_pose:
+    x: 0.0
+    y: 0.0
+    theta: 0
+    position_std: 0.0
+    orientation_std: 0.0
+    
+  measurement_model:
+    measurement_std: 0.065
+
+  process_var:
+    position: 0.00565
+    orientation: 0.035
+
+  laser:
+    angle_min: 0.00555555555
+    angle_dir: 1
+    num_scan: 360
+    range_min: 0.255
+    range_max: 3.0
+    tf_x: 0.0
+    tf_y: 0.042
+    tf_theta: -0.5
+
+  map:
+    filename: /home/ras23/catkin_ws/src/localisation/src/lab_maze_2017.txt
+    x_offset: -0.2
+    y_offset: -0.2
+    theta_offset: -0.5
+
+  tf:
+    x: -0.2
+    y: 0.2
+    theta: 0
+

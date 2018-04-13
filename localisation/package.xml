@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>localisation</name>
+  <version>0.0.0</version>
+  <description>The localisation package</description>
+
+  <maintainer email="alvin@somewhere.se">alvin</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>dead_reckoning</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>laser_geometry</build_depend>
+
+  <run_depend>dead_reckoning</run_depend>
+  <run_depend>map</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>laser_geometry</run_depend>
+
+  <export>
+
+  </export>
+</package>

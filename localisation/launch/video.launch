@@ -1,0 +1,20 @@
+<launch>
+  <!-- launch PF_node and load params-->
+  <!--node name="particleFilter" pkg="localisation" type="localisation"/-->
+  <node name="particleFilter" pkg="localisation" type="localisation" />
+
+  <!-- launch the keyboard teleop -->
+  <include file="$(find keyboard_teleop)/launch/keyboard_teleop.launch" />  
+
+  <!-- launch the rplidar -->
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />  
+
+  <!-- parameters for the localisation -->
+  <rosparam file="$(find localisation)/config/localisation.yaml" command="load"/>
+  
+  <!-- launch the dead_reckoning -->
+  <include file="$(find dead_reckoning)/launch/dead_reckoning.launch"/>
+
+<!-- launch the map -->
+  <include file="$(find map)/launch/map.launch"/>
+</launch>
