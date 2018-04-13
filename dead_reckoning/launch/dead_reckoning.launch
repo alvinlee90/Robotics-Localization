@@ -1,0 +1,9 @@
+<launch>
+  <!-- launch dead_reckoning_node and load params-->z
+  <node name="dead_reckoning" pkg="dead_reckoning" type="dead_reckoning"/>
+  <!--node name="dead_reckoning" pkg="dead_reckoning" type="dead_reckoning" output="screen"/-->
+
+  <rosparam file="$(find dead_reckoning)/config/dead_reckoning_params.yaml" command="load"/>
+  
+  <node pkg="tf" type="static_transform_publisher" name="tf_laser_to_robot" args="-0.034 0.011 0.082 0.0 0 0.707 0.707 robot laser 100" />
+</launch>

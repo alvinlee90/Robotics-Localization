@@ -1,0 +1,25 @@
+<launch>
+  <!-- Launch, Keyboard, motor, map, deadreckoning, laser -->
+  <node pkg="keyboard_teleop" type="keyboard_teleop.py" name="keyboard_teleop"/>
+
+  <!-- launch the motor_controller -->
+  <include file="$(find motor_controller)/launch/motor_controller.launch" />
+
+  <!-- launch the dead_reckoning -->
+  <include file="$(find dead_reckoning)/launch/dead_reckoning.launch" />
+
+  <!-- launch the rplidar -->
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+  <rosparam file="$(find keyboard_teleop)/config/keyboard_teleop.yaml" command="load"/>
+
+  <!-- Launch visualization map and static_tf -->
+  <arg name="map_file" default="lab_maze_2017.txt" />
+  <arg name="x_offset" default="0.2"/>
+  <arg name="y_offset" default="0.2"/>
+  <arg name="theta_offset" default="1.57079633"/>
+
+  <!-- launch map and load params-->
+  <!--include file="$(find map)/launch/map.launch" /-->
+
+</launch>

@@ -1,0 +1,7 @@
+# dead_reckoning parameters
+dead_reckoning:
+  base: 0.205
+  radius: 0.036
+  x: 0.0
+  y: 0.0
+  theta: 0
