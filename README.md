@@ -6,4 +6,4 @@ The map was represented as a list of line segments (coordinates of end-points) w
 
 ## Results
 
-[![Localisation Video](https://gifs.com/gif/wmlnrJ)](https://youtu.be/cnsXA51BYyI)
+[![Localisation Video](https://img.youtube.com/vi/cnsXA51BYyI/0.jpg)](https://youtu.be/cnsXA51BYyI)
