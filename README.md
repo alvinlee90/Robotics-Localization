@@ -7,6 +7,6 @@ The map was represented as a list of line segments (coordinates of end-points) w
 ## Results
 Videos of the localisation working on the mobile robot
 
-[![Localisation Video](https://img.youtube.com/vi/cnsXA51BYyI/1.jpg)](https://youtu.be/cnsXA51BYyI)
+[![Localisation Video](https://img.youtube.com/vi/cnsXA51BYyI/0.jpg)](https://youtu.be/cnsXA51BYyI)
 
-[![Localisation Video 2](https://img.youtube.com/vi/1Lasnjm2qg4/1.jpg)](https://youtu.be/1Lasnjm2qg4)
+[![Localisation Video 2](https://img.youtube.com/vi/1Lasnjm2qg4/0.jpg)](https://youtu.be/1Lasnjm2qg4)
